@@ -1,19 +1,31 @@
-<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="995" measuredH="446" mockupW="639" mockupH="400">
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1113" measuredH="467" mockupW="1053" mockupH="455">
   <controls>
-    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="356" y="46" w="639" h="400" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="212" y="12" w="901" h="455" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
         <text>A%20Web%20Page%0Ahttp%3A//</text>
       </controlProperties>
     </control>
-    <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="458" y="160" w="-1" h="-1" measuredW="61" measuredH="27" zOrder="1" locked="false" isInGroup="-1">
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::TextInput" x="388" y="108" w="405" h="-1" measuredW="79" measuredH="26" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Button</text>
+        <text/>
       </controlProperties>
     </control>
-    <control controlID="2" controlTypeID="com.balsamiq.mockups::Arrow" x="518" y="170" w="-1" h="-1" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="266" y="108" w="122" h="-1" measuredW="119" measuredH="24" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
-        <direction>bottom</direction>
-        <text/>
+        <size>16</size>
+        <text>Nome%20Completo%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="786" y="296" w="-1" h="-1" measuredW="84" measuredH="24" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>CNPJ/CPF%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Label" x="95" y="72" w="-1" h="-1" measuredW="61" measuredH="21" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::ComboBox" x="60" y="20" w="-1" h="-1" measuredW="65" measuredH="46" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Fisica%0AJuridica</text>
       </controlProperties>
     </control>
   </controls>
