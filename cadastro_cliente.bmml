@@ -10,5 +10,11 @@
         <text>Button</text>
       </controlProperties>
     </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Arrow" x="518" y="170" w="-1" h="-1" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>bottom</direction>
+        <text/>
+      </controlProperties>
+    </control>
   </controls>
 </mockup>
