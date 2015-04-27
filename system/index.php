@@ -39,7 +39,7 @@
 
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
-         <p class="text_center footer_own">Copyright <span class="glyphicon glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> 2012 - 2015 Ciências da Conputação - Estácio/Ceut </p>
+         <p class="text_center footer_own">Copyright <span class="glyphicon glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> 2012 - <?php echo date('Y'); ?> Ciências da Conputação - Estácio/Ceut </p>
         </div>
 
       </div>
