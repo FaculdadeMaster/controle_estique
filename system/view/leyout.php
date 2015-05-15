@@ -24,34 +24,61 @@
       <div class="row">
         <div class="col-md-12 ">
 
-          <nav class="navbar navbar-inverse">
-           
-           <a class="navbar-brand" href="#">Home</a>
-       
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+           <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
 
-        
-          <a href="#" class="dropdown-toggle navbar-brand" data-toggle="dropdown" role="button" aria-expanded="false">Cadastro <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Cliente</a></li>
-            <li><a href="#">Funcionário</a></li>
-          </ul>
-   
+            <li>
+              <a href="#" id="button1"><strong>HOME</strong></a>
+            </li>
 
-       
-          <a href="#" class="dropdown-toggle navbar-brand" data-toggle="dropdown" role="button" aria-expanded="false">Ordem de Serviço <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Criar Ordem de Serviço</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Ordem de serviço abertas</a></li>
-            <li><a href="#">Ordem de serviço concluidas</a></li>
-          </ul>
-              <button type="button" class="btn btn-danger top">Sair</button>
 
-        </nav>
+            <li>
+                <a href="#" class="btn btn-inverse dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true"> 
+                  Cadastro <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="button2">Clientes</a></li>  
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="button1">Funcionários</a></li>  
+              </ul>
+            </li>
+
+            <li>
+                <a href="#" class="btn btn-inverse dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true"> 
+                  Ordem de Serviço <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="button1">Criar Ordem de Serviço</a></li> 
+              <li role="presentation" class="divider"></li> 
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="button1">Ordem de Serviço Aberta</a></li>  
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="button1">Ordem de Serviço Fechada</a></li>  
+              </ul>
+            </li>
+            
+            <li>
+              <a href="#" id="button1">Relatório</a>
+            </li>
+
+
+              <li>
+               <button type="button" class="top btn btn-danger">Sair</button>
+              </li>
+
+
+
+
+         
+
+
+
+            </ul>
+
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav><!--End menu principal -->
 
 </div>
 
-
+<!--
         <div class="col-md-12 content_own">
 
           <div class="panel panel-primary">
@@ -69,7 +96,11 @@
              </div>
 
         </div>
+-->
 
+ <main id="mainContent">
+                              <object type='text/html' data='home.php' width='1170' height='1000'></object>
+                </main>  
 
       </div><!--end row-->
 
@@ -82,5 +113,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/butom.js"></script>
   </body>
 </html>

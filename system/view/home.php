@@ -19,40 +19,7 @@
     <![endif]-->
   </head>
   <body>
-   
-   <div class="container">
-      <div class="row">
-        <div class="col-md-12 ">
-
-          <nav class="navbar navbar-inverse">
-           
-           <a class="navbar-brand" href="#">Home</a>
-       
-
-        
-          <a href="#" class="dropdown-toggle navbar-brand" data-toggle="dropdown" role="button" aria-expanded="false">Cadastro <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Cliente</a></li>
-            <li><a href="#">Funcionário</a></li>
-          </ul>
-   
-
-       
-          <a href="#" class="dropdown-toggle navbar-brand" data-toggle="dropdown" role="button" aria-expanded="false">Ordem de Serviço <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Criar Ordem de Serviço</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Ordem de serviço abertas</a></li>
-            <li><a href="#">Ordem de serviço concluidas</a></li>
-          </ul>
-              <button type="button" class="btn btn-danger top">Sair</button>
-
-        </nav>
-
-</div>
-
-
-        <div class="col-md-12 content_own">
+           <div class="col-md-12">
 
           <div class="panel panel-primary">
             <div class="panel-heading"><p align="center"><strong>Home</strong></p></div>
@@ -71,16 +38,12 @@
         </div>
 
 
-      </div><!--end row-->
-
-   </div><!--end conteiner
-
-
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/butom.js"></script>
   </body>
 </html>
