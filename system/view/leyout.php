@@ -47,15 +47,15 @@
                 <a href="#" class="btn btn-inverse dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true"> 
                   Ordem de Serviço <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="button1">Criar Ordem de Serviço</a></li> 
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="button4">Criar Ordem de Serviço</a></li> 
               <li role="presentation" class="divider"></li> 
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="button1">Ordem de Serviço Aberta</a></li>  
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="button1">Ordem de Serviço Fechada</a></li>  
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="button5">Ordem de Serviço Aberta</a></li>  
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="button6">Ordem de Serviço Fechada</a></li>  
               </ul>
             </li>
             
             <li>
-              <a href="#" id="button1">Relatório</a>
+              <a href="#" id="button7">Relatório</a>
             </li>
 
 

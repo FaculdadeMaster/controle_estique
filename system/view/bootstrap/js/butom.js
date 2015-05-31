@@ -16,12 +16,40 @@
 	};
 
 	document.getElementById("button3").onclick=function(){
-		var mainContent = document.getElementById("mainContent");
-		var width = screen.width;  
-		mainContent.innerHTML="<object type='text/html' data='cads_funcionario.php' width='1170' height='1000'></object>";
+	var mainContent = document.getElementById("mainContent");
+	var width = screen.width;  
+	mainContent.innerHTML="<object type='text/html' data='cads_funcionario.php' width='1170' height='1000'></object>";
+		
+	};
+
+	document.getElementById("button4").onclick=function(){
+	var mainContent = document.getElementById("mainContent");
+	var width = screen.width;  
+	mainContent.innerHTML="<object type='text/html' data='cads_ordem.php' width='1170' height='1000'></object>";
+		
+	};
+
+
+	document.getElementById("button5").onclick=function(){
+	var mainContent = document.getElementById("mainContent");
+	var width = screen.width;  
+	mainContent.innerHTML="<object type='text/html' data='ordem_aberta.php' width='1170' height='1000'></object>";
+		
+	};
+
+	document.getElementById("button6").onclick=function(){
+	var mainContent = document.getElementById("mainContent");
+	var width = screen.width;  
+	mainContent.innerHTML="<object type='text/html' data='ordem_fechadas.php' width='1170' height='1000'></object>";
 		
 	};
 	
+	document.getElementById("button7").onclick=function(){
+	var mainContent = document.getElementById("mainContent");
+	var width = screen.width;  
+	mainContent.innerHTML="<object type='text/html' data='relatorio.php' width='1170' height='1000'></object>";
+		
+	};
 	
 	
 })();
