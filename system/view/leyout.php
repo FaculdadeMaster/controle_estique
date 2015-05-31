@@ -39,7 +39,7 @@
                   Cadastro <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
               <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="button2">Clientes</a></li>  
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="button1">Funcionários</a></li>  
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="button3">Funcionários</a></li>  
               </ul>
             </li>
 

@@ -59,28 +59,56 @@
     <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Telefone 2">
   </div>
 
+
+
+
 </div><!--fim do col-6-->
+<div class="col-md-6">
 
+   <div class="form-group">
+    <label for="exampleInputEmail1">Email: </label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  </div>
 
+  <div class="form-group">
+    <label for="exampleInputEmail1">CEP: </label>
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="CEP">
+  </div>
 
+  <div class="form-group">
+    <label for="exampleInputEmail1">UF: </label>
+    <select class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+  </div>
 
+  <div class="form-group">
+    <label for="exampleInputEmail1">FAX: </label>
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Fax">
+  </div>
 
+  <div class="form-group">
+    <label for="exampleInputEmail1">CPF/CNPJ: </label>
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="CPF/CNPJ" onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;">
+  </div>
+
+    <div class="form-group">
+    <label for="exampleInputEmail1">Tipo de Pessoa </label>
+    <select class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+  </div>
 
   <button type="submit" class="btn btn-default">Salvar</button>
 </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             </div>
           </div>
