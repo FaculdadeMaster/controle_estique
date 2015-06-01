@@ -1,4 +1,4 @@
-<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1051" measuredH="466" mockupW="991" mockupH="466">
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1051" measuredH="466" mockupW="864" mockupH="466">
   <controls>
     <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="187" y="0" w="864" h="466" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
@@ -30,19 +30,13 @@
         <text>Valor%3A</text>
       </controlProperties>
     </control>
-    <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="60" y="140" w="-1" h="-1" measuredW="77" measuredH="24" zOrder="6" locked="false" isInGroup="-1">
-      <controlProperties>
-        <size>16</size>
-        <text>Descri%E7%E3o%3A</text>
-      </controlProperties>
-    </control>
-    <control controlID="7" controlTypeID="com.balsamiq.mockups::TextInput" x="323" y="188" w="98" h="-1" measuredW="79" measuredH="26" zOrder="7" locked="false" isInGroup="-1"/>
-    <control controlID="8" controlTypeID="com.balsamiq.mockups::DateChooser" x="323" y="150" w="135" h="-1" measuredW="90" measuredH="25" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::TextInput" x="323" y="188" w="98" h="-1" measuredW="79" measuredH="26" zOrder="6" locked="false" isInGroup="-1"/>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::DateChooser" x="323" y="150" w="135" h="-1" measuredW="90" measuredH="25" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <text>%20%20/%20%20/%20%20%20%20</text>
       </controlProperties>
     </control>
-    <control controlID="9" controlTypeID="com.balsamiq.mockups::TabBar" x="202" y="221" w="601" h="181" measuredW="185" measuredH="100" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::TabBar" x="202" y="221" w="601" h="181" measuredW="185" measuredH="100" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
         <size>16</size>
         <text>%20%20%20Descri%E7%E3o%3A</text>
