@@ -23,49 +23,57 @@
            <div class="col-md-12">
 
                 <div class="panel panel-default">
-            <div class="panel-heading">Ordem de serviço aberta</div>
+            <div class="panel-heading">Clientes Cadastrados</div>
             <div class="panel-body">
               
   <form action="../controler/control.php" method="post">
 
-<div class="col-md-9 col-md-offset-2">
+<div class="col-md-12 col-md-offset-0">
   <table class="table table-hover">
 
   <tr>
-    <th>Nome Cliente</th>
+    <th>Código</th>
+    <th>Nome</th>
+    <th>Tipo de Pessoa</th>
+    <th>CPF/CNPJ</th>
     <th>Endereço</th>
+    <th>Bairro</th>
+    <th>Cidade</th>
     <th>CEP</th>
     <th>UF</th>
-    <th>Bairro</th>
     <th>Telefone 1</th>
-    <th>Data do Serviço</th>
-    <th>Observação</th>
-    <th>Fechar</th>
+    <th>Telefone 2</th>
+    <th>FAX</th>
+    <th>Email</th>      
   </tr>
 
     <?php
     include "../model/crud_classes.php";
     $ex=new Vizualiza();
-    $aux=$ex->select("vs_ordem_servico where status_ordem=1");
+    $aux=$ex->select("clientes");
     $aux->execute();
 
 
     while($linha=$aux->fetch(PDO::FETCH_ASSOC)){
-      $dataServer= new DateTime($linha['data_servico']);
+    //  $dataServer= new DateTime($linha['data_servico']);
          
 
         print "  
-      <tr >
+      <tr class=\"grid_own\">
+        <td>".$linha['idclientes']."</td>
         <td>".$linha['nome']."</td>
+        <td>".$linha['tipo_pessoa']."</td>
+        <td>".$linha['cpf_cnpj']."</td>
         <td>".$linha['endereco']."</td>
+        <td>".$linha['bairro']."</td>
+        <td>".$linha['cidade']."</td>
         <td>".$linha['cep']."</td>
         <td>".$linha['uf']."</td>
-        <td>".$linha['bairro']."</td>
         <td>".$linha['telefone1']."</td>
-        <td>".$dataServer->format('d/m/Y')."</td>
-        <td>".$linha['observacao']."</td>
-        <td> <form action=\"../controler/control.php\" method=\"post\"><input type=\"hidden\" name=\"fechar\" value=".$linha['idordem_servico']." /><input type=\"submit\" class=\"btn btn-danger\" value=\"Fechar\"></form></td>
-       </tr>";
+        <td>".$linha['telefone2']."</td>
+        <td>".$linha['fax']."</td>
+        <td>".$linha['email']."</td>
+         </tr>";
 
 
 

@@ -20,14 +20,14 @@
               <div class="panel panel-primary top">
                  <div class="panel-heading text_center">Login</div>
                   <div class="panel-body">
-                    <form action="" method="post">
+                    <form action="index.php" method="post">
                         <div class="form-group">
-                          <label for="exampleInputEmail1">Email usuário</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter usuário">
+                          <label for="exampleInputEmail1">Nome</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nome de usuário" name="user">
                         </div>
                         <div class="form-group">
                           <label for="exampleInputPassword1">Senha</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="senha">
                         </div>
                                      
                         <button type="submit" class="btn btn-default">Enviar</button>
@@ -45,6 +45,18 @@
       </div>
 
     </div>
+
+
+    <?php
+    if(!empty($_POST['senha'])){
+      if ($_POST['senha']=='admin' && $_POST['user']=='admin'){
+        header( "refresh:1;url=view/leyout.php" );
+
+      }else{
+        print "<SCRIPT>alert (\"Erro na autenticação!\")</SCRIPT>";
+      }
+    }
+    ?>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

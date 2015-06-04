@@ -2,7 +2,7 @@
 
 function conectar(){
 		try{
-		 $pdo=new PDO("mysql:host=mysql.weblink.com.br;dbname=u179029833_es","u179029833_es","leticia");
+		 $pdo=new PDO("mysql:host=localhost;dbname=faculdade","root","leticia");
 		}catch(PDOException $e){
 			//var_dump($e);
 			print $e->getMessage();

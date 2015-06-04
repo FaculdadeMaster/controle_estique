@@ -31,19 +31,49 @@
 <div class="col-md-9 col-md-offset-2">
   <table class="table table-hover">
 
-  <tr>
-<th>Nome Cliente</th>
-<th>Telefone 1</th>
-<th>Telefone 2</th>
-<th>Data do serviço</th>
-<th>Excluir</th>
-</tr>
+ <tr>
+    <th>Nome Cliente</th>
+    <th>Endereço</th>
+    <th>CEP</th>
+    <th>UF</th>
+    <th>Bairro</th>
+    <th>Telefone 1</th>
+    <th>Data do Serviço</th>
+    <th>Observação</th>
+    <th>Fechar</th>
+  </tr>
 
-  <tr ><td>Row 1 Cell 1</td><td>Row 1 Cell 2</td><td>Row 1 Cell 3</td><td>Row 1 Cell 1</td><td><button type="button" class="btn btn-danger">Excluir</button></td></tr>
-  <tr ><td>Row 1 Cell 1</td><td>Row 1 Cell 2</td><td>Row 1 Cell 3</td><td>Row 1 Cell 1</td><td><button type="button" class="btn btn-danger">Excluir</button></td></tr>
-  <tr ><td>Row 1 Cell 1</td><td>Row 1 Cell 2</td><td>Row 1 Cell 3</td><td>Row 1 Cell 1</td><td><button type="button" class="btn btn-danger">Excluir</button></td></tr>
+    <?php
+    include "../model/crud_classes.php";
+    $ex=new Vizualiza();
+    $aux=$ex->select("vs_ordem_servico where status_ordem=0");
+    $aux->execute();
 
+
+    while($linha=$aux->fetch(PDO::FETCH_ASSOC)){
+      $dataServer= new DateTime($linha['data_servico']);
+         
+
+        print "  
+      <tr >
+        <td>".$linha['nome']."</td>
+        <td>".$linha['endereco']."</td>
+        <td>".$linha['cep']."</td>
+        <td>".$linha['uf']."</td>
+        <td>".$linha['bairro']."</td>
+        <td>".$linha['telefone1']."</td>
+        <td>".$dataServer->format('d/m/Y')."</td>
+        <td>".$linha['observacao']."</td>
+        <td> <form action=\"../controler/control.php\" method=\"post\"><input type=\"hidden\" name=\"excluir\" value=".$linha['idordem_servico']." /><input type=\"submit\" class=\"btn btn-danger\" value=\"Fechar\"></form></td>
+       </tr>";
+
+
+
+    }
+    ?>
  </table>
+
+
 
 
 </div><!--fim do col-12-->

@@ -47,7 +47,14 @@
 	document.getElementById("button7").onclick=function(){
 	var mainContent = document.getElementById("mainContent");
 	var width = screen.width;  
-	mainContent.innerHTML="<object type='text/html' data='relatorio.php' width='1170' height='1000'></object>";
+	mainContent.innerHTML="<object type='text/html' data='client_cads.php' width='1170' height='1000'></object>";
+		
+	};
+
+	document.getElementById("button8").onclick=function(){
+	var mainContent = document.getElementById("mainContent");
+	var width = screen.width;  
+	mainContent.innerHTML="<object type='text/html' data='funci_cads.php' width='1170' height='1000'></object>";
 		
 	};
 	

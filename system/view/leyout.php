@@ -53,14 +53,20 @@
               <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="button6">Ordem de Serviço Fechada</a></li>  
               </ul>
             </li>
-            
+        
             <li>
-              <a href="#" id="button7">Relatório</a>
+                <a href="#" class="btn btn-inverse dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true"> 
+                  Listagem <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="button7">Clientes Cadastrados</a></li>  
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="button8">Funcionários Cadastrados</a></li>  
+              </ul>
             </li>
 
 
               <li>
-               <button type="button" class="top btn btn-danger">Sair</button>
+                <form action="../index.php" method="post"><input type="submit" class="top btn btn-danger" value="SAIR"></form>
+               
               </li>
 
 

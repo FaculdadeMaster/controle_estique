@@ -31,8 +31,18 @@
 <div class="col-md-6 col-md-offset-3">
 
   <div class="form-group"  >
+    <label for="exampleInputEmail1">Número de Cadastro do Cliente </label>
+    <input type="text" class="form-control" id="exampleInputEmail1"  placeholder="Código do cliente"  name="formIdCliente">
+  </div>
+
+    <div class="form-group"  >
+    <label for="exampleInputEmail1">Número do Funcionário</label>
+    <input type="text" class="form-control" id="exampleInputEmail1"  placeholder="Código do funcionário"  name="formIdFuncionario">
+  </div>
+
+  <div class="form-group"  >
     <label for="exampleInputEmail1">Data do serviço </label>
-    <input type="date" class="form-control" id="exampleInputEmail1"  name="formDate">
+    <input type="date" class="form-control" id="exampleInputEmail1"  name="formData">
   </div>
 
   <div class="form-group">
@@ -42,14 +52,14 @@
 
     <div class="form-group">
     <label for="exampleInputEmail1">Descrição</label>
-    <textarea class="form-control" rows="4" cols="50"placeholder="Descrição do serviço" name="Descrição do serviço"> </textarea>
+    <textarea class="form-control" rows="4" cols="50"placeholder="Descrição do serviço" name="formObs"> </textarea>
   </div>
 
 
 
 
 
-  <input name="cadsCliente" type="hidden" value="yes"  />
+  <input name="cadsOrdem" type="hidden" value="yes"  />
   <button type="submit" class="btn btn-default">Salvar</button>
 </div><!--fim do col-12-->
 

@@ -85,6 +85,37 @@
        	
 
     	}
+
+        /**
+         * inserção de ordem de serviço
+         *
+         * @return void
+         * @author Guilherme Barbosa Lima
+         **/
+        function ordemservico($idcliente, $idfuncionario, $data, $valor, $obs){
+                    $pdo=conectar();
+
+            $insert=$pdo->prepare("insert into ordem_servico (idcliente_servico, idfuncionario, data_servico, valor_total,observacao, status_ordem) 
+                values (:idcliente, :idfuncionario, :data,:valor,:obs,:status)");
+            $insert->bindValue(":idcliente", $idcliente, PDO::PARAM_INT);
+            $insert->bindValue(":idfuncionario", $idfuncionario, PDO::PARAM_INT);
+            $insert->bindValue(":data", $data, PDO::PARAM_STR);
+            $insert->bindValue(":valor", $valor);
+            $insert->bindValue(":obs", $obs, PDO::PARAM_STR);
+            $insert->bindValue(":status", 1, PDO::PARAM_INT);
+     
+
+
+            
+           if ($insert->execute()){
+            print "<SCRIPT>alert (\"Cadastro de ordem de servico realizado com sucesso!\")</SCRIPT>";
+           
+         }else{
+            print "<SCRIPT>alert (\"Erro ao criar a ordem de serviço!\")</SCRIPT>";
+            }
+
+        }
+ 
 	}
 
 
@@ -104,10 +135,72 @@
 			 **/
 			function select($tabela){
 				$pdo=conectar();
+
 				$selGeral=$pdo->prepare('select * from '.$tabela);
 				return $selGeral;
 			}
 		} // END class 	
+
+        /**
+         * classe de exclução
+         *
+         * @package model
+         * @author Guilherme Barbosa Lima
+         **/
+        class Excluir{
+            /**
+             * excluir ordem de serviço
+             *
+             * @return void
+             * @author Guilherme Barbosa Lima
+             **/
+            function excluirservico($idservico){
+                $pdo=conectar();
+
+                $del=$pdo->prepare("delete from ordem_servico where idordem_servico=:id");
+                $del->bindValue(":id",$idservico, PDO::PARAM_INT);
+                
+
+                    if ($del->execute()){
+            print "<SCRIPT>alert (\"Exclussão realizada com sucesso!\")</SCRIPT>";
+           
+         }else{
+            print "<SCRIPT>alert (\"Erro na exclussão!\")</SCRIPT>";
+            }    
+
+
+            }
+
+        } // END class 
+
+
+        /**
+         * classe de update em tabelas da aplicação
+         *
+         * @package model
+         * @author Guilherme Barbosa Lima
+         **/
+        class Update{
+            /**
+             * update do status da odem de servico
+             *
+             * @return void
+             * @author Guilherme Barbosa Lima
+             **/
+            function ordemfechada($idordem){
+
+            $pdo=conectar();
+
+            $up=$pdo->prepare("update ordem_servico set status_ordem=0 where idordem_servico=:id");
+            $up->bindValue(":id",$idordem, PDO::PARAM_INT);
+                           if ($up->execute()){
+            print "<SCRIPT>alert (\"Ordem de Serviço fechada com sucesso!\")</SCRIPT>";
+           
+         }else{
+            print "<SCRIPT>alert (\"Erro ao Fechar à Ordem de Serviço!\")</SCRIPT>";
+            } 
+            }
+        } // END class 
 	
 
 ?>

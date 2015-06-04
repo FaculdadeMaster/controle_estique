@@ -2,6 +2,8 @@
 	include "../model/crud_classes.php";
 
 	$cds=new Cadastro();
+	$ex=new Excluir();
+	$upd=new Update();
 	
 	if (!empty($_POST['cadsCliente'])){
 
@@ -29,4 +31,41 @@
 
 	}
 
+
+
+		if (!empty($_POST['cadsOrdem'])){
+
+		$cds->ordemservico($_POST['formIdCliente'], $_POST['formIdFuncionario'], $_POST['formData'],$_POST['formValor'],$_POST['formObs']);
+
+		//$pl->insert($_POST['dataForm'], $_POST['textForm'], $_POST['timeForm']);
+
+	 
+		header( "refresh:1;url=../view/cads_ordem.php" );
+
+	}
+
+
+
+		if (!empty($_POST['excluir'])){
+
+		$ex->excluirservico($_POST['excluir']);
+
+		//$pl->insert($_POST['dataForm'], $_POST['textForm'], $_POST['timeForm']);
+
+	 
+		header( "refresh:1;url=../view/cads_ordem.php" );
+
+	}
+
+
+	    if (!empty($_POST['fechar'])){
+
+		$upd->ordemfechada($_POST['fechar']);
+
+		//$pl->insert($_POST['dataForm'], $_POST['textForm'], $_POST['timeForm']);
+
+	 
+		header( "refresh:1;url=../view/cads_ordem.php" );
+
+	}
 ?>
