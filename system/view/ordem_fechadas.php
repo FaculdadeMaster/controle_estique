@@ -40,7 +40,7 @@
     <th>Telefone 1</th>
     <th>Data do Serviço</th>
     <th>Observação</th>
-    <th>Fechar</th>
+    <th>Excluir</th>
   </tr>
 
     <?php
@@ -64,7 +64,7 @@
         <td>".$linha['telefone1']."</td>
         <td>".$dataServer->format('d/m/Y')."</td>
         <td>".$linha['observacao']."</td>
-        <td> <form action=\"../controler/control.php\" method=\"post\"><input type=\"hidden\" name=\"excluir\" value=".$linha['idordem_servico']." /><input type=\"submit\" class=\"btn btn-danger\" value=\"Fechar\"></form></td>
+        <td> <form action=\"../controler/control.php\" method=\"post\"><input type=\"hidden\" name=\"excluir\" value=".$linha['idordem_servico']." /><input type=\"submit\" class=\"btn btn-danger\" value=\"Excluir\"></form></td>
        </tr>";
 
 
